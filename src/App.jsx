@@ -7,7 +7,7 @@ function App() {
   const [percent, setPercent] = useState("");
   function getTip(bill, percent) {
     let total = bill * (percent / 100);
-    return total;
+    return total.toFixed(2);
   }
 
   return (
